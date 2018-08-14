@@ -1,0 +1,131 @@
+html{
+	box-sizing:border-box;
+}
+
+*,
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: 400;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.wrapper{
+    width: 1200px;
+	margin: 0 auto;
+}
+
+nav {
+    margin-top: 77px;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.site-navigation-item {
+    margin-left: 100px; /*отталкиваем элементы списка друг от друга вправо - но у всех элементов на макете разное расстояние, не знаю, как сделать разное, делаю усредненное */
+    display: inline-block;
+}
+
+.site-navigation li:first-child {
+    margin-left: 0; /*убираем марджин у первого элемента списка. ОЧЕНЬ ВАЖНО*/  
+}
+
+.site-navigation a{
+    display: block;
+      color:#626262;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {/*фокус позволяет задать визуальное оформление при передвижению по элементам меню при помощи Tab*/
+	color: #03a9f4;
+}
+
+section {
+    width: 950px; /*почему-то при размере 900рх согласно макету не умещается контент, не могу найти почему*/
+    margin: 0 auto;
+    margin-top: 87px;
+  }
+  
+  ul li {
+    display: inline-block;
+  }
+
+  .fatures-item-left {
+      margin-right: 60px;
+  }
+
+  .fatures-item-right {
+    margin-left: -4px;
+  }
+
+
+.features {
+    list-style: none;
+}
+
+.features-name {
+    font-family: Ubuntu;
+    color:#b4ad9e;
+    font-weight: 300;
+    /*width: 414px; - ничего не меняет, к тому же, не указано в стилях исходника*/
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+}
+
+.features-announcement {
+    font-weight: 400;
+    width: 414px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    width: 164px;
+    height: 60px;
+    font-family: PlayfairDisplay;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}

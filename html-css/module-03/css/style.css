@@ -15,31 +15,32 @@ body {
     font-size: 14px;
     line-height: 24px;
     text-align: left;
+    margin: 0 auto;
 }
 
 .wrapper{
-    width: 1200px;
-	margin: 0 auto;
+    width: 900px;
+    padding-top: 44px;
+    padding-bottom: 70px;
 }
 
-nav {
-    margin-top: 77px;
-}
 
 .site-navigation {
     margin: 0;
     padding: 0;
+    font-size: 0px;
     list-style: none;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .site-navigation-item {
-    margin-left: 100px; /*отталкиваем элементы списка друг от друга вправо - но у всех элементов на макете разное расстояние, не знаю, как сделать разное, делаю усредненное */
+    margin-right: 100px; /*отталкиваем элементы списка друг от друга вправо - но у всех элементов на макете разное расстояние, не знаю, как сделать разное, делаю усредненное */
     display: inline-block;
 }
 
-.site-navigation li:first-child {
-    margin-left: 0; /*убираем марджин у первого элемента списка. ОЧЕНЬ ВАЖНО*/  
+.site-navigation li:last-child {
+    margin-right: 0; /*убираем марджин у последнего элемента списка. ОЧЕНЬ ВАЖНО*/  
 }
 
 .site-navigation a{
@@ -55,46 +56,59 @@ nav {
 	color: #03a9f4;
 }
 
-section {
-    width: 950px; /*почему-то при размере 900рх согласно макету не умещается контент, не могу найти почему*/
-    margin: 0 auto;
-    margin-top: 87px;
-  }
-  
+.features {
+    font-size: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}  
+
   ul li {
     display: inline-block;
   }
 
-  .fatures-item-left {
+  .features-item {
       margin-right: 60px;
+      margin-bottom: 33px;
   }
 
-  .fatures-item-right {
-    margin-left: -4px;
+  .features-item:nth-child(2n) {
+    margin-right: 0px;
   }
 
-
-.features {
-    list-style: none;
+img.features-image {
+    margin-bottom: 30px;
 }
 
 .features-name {
     font-family: Ubuntu;
     color:#b4ad9e;
     font-weight: 300;
-    /*width: 414px; - ничего не меняет, к тому же, не указано в стилях исходника*/
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
-h3 {
+.features-item h3 {
     font-size: 30px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
+    margin: 0;
+    margin-bottom: 44px;
 }
 
 .features-announcement {
+    font-size: 14px;
     font-weight: 400;
     width: 414px;
+    margin: 0;
+    margin-bottom: 135px;
 }
+
+/*.features-announcement:nth-child(n+5) {
+    margin-bottom: 57px;
+}
+*/
+/*хочу установить нижний отступ для двух последних элементов, но этот вариант не срабатывает*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -106,20 +120,13 @@ input[type="radio"].visually-hidden {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
-
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
-footer {
-    margin: 0 auto;
-    text-align: center;
-}
-
-button {
+.btn {
     width: 164px;
     height: 60px;
     font-family: PlayfairDisplay;

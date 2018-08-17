@@ -15,7 +15,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     text-align: left;
-    /*margin: 0;*/
+    margin: 0;
 }
 
 .wrapper{
@@ -64,7 +64,7 @@ body {
     list-style: none;
 }  
 
-  ul li {
+  ul.features li.features-item {
     display: inline-block;
   }
 
@@ -89,6 +89,7 @@ img.features-image {
     font-family: Ubuntu;
     color:#b4ad9e;
     font-weight: 300;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 30px;
@@ -108,12 +109,6 @@ img.features-image {
     margin: 0;
 }
 
-/*.features-announcement:nth-child(n+5) {
-    margin-bottom: 57px;
-}
-*/
-/*хочу установить нижний отступ для двух последних элементов, но этот вариант не срабатывает*/
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -130,10 +125,6 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-.button-block {
-    text-align: center;
-}
-
 .btn {
     width: 164px;
     height: 60px;
@@ -142,5 +133,6 @@ input[type="radio"].visually-hidden {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center;
+    margin: 0 auto;
+    display: block;
 }

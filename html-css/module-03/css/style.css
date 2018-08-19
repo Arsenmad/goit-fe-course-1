@@ -136,10 +136,12 @@ input[type="radio"].visually-hidden {
     padding-right: 37px;
     padding-left: 37px;
     margin-top: 55px;
+    border: 1px solid #777;
 }
 
 button:hover,
 button:focus {
     background-color:white;
-    border: 1px solid #626262;;
+    border: 1px solid #626262;
+    color: #03a9f4;
 }

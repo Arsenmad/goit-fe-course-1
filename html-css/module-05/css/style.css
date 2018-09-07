@@ -167,7 +167,6 @@ img {
   top: 45%;
   left: 18%;
   transform: translateY(-50%);
-  width: 1100px;
   list-style: none;
 }
 
@@ -248,7 +247,6 @@ margin-top: 32px;
     margin-bottom: 30px;
     width: 255px;
     height: 322px;
-    list-style: none;
     position: relative;/*1. указываем, элемент, от которого будет вестись отсчет положения абсолютно позиционированных элементов*/
   
   }
@@ -256,10 +254,8 @@ margin-top: 32px;
   .overlay {
     width: 100%;
     height: 271px;
-    border-width: 10px;
-    border-style: solid;
+    border: 10px solid rgba(255, 255, 255, 0.7);
     background-color: rgba(0, 0, 0, 0.549);
-    border-color: rgb(255, 255, 255); 
     position: absolute;
     opacity: 0;
     }
@@ -294,23 +290,22 @@ margin-top: 32px;
     margin-bottom: 0px;
   }
 
-    .social-icons a {
+   .social-icons a {
       display: inline-block;
       border: 1px solid white;
-      position: relative;  
+      position: relative;
+      height: 50px;
+      width: 50px;
     }
-
+    
     .social-icons-item-1:hover, .social-icons-item-2:hover, .social-icons-item-3:hover {
-      /*border-width: 1px;
-      border-color: #1abc9c;
-      border-style: solid;*/
       background-color: #1abc9c;
     } 
 
     .social-icons-item-1, .social-icons-item-2, .social-icons-item-3 {
       height: 50px;
       width: 50px;
-      position: absolute;             
+      position: absolute;       
       top: 50%;
       background-repeat: no-repeat;
       background-position: center;
@@ -328,37 +323,20 @@ margin-top: 32px;
       background-image: url('../img/clock.png');
     }
 
-    .cart-button {
-      padding: 0px;
-      margin: 0px;
-      position: absolute;  
-      cursor: pointer;
-      opacity: 1;
-      width: 164px;
-      height: 48px;
-      line-height: 48px;
-      color:#ffffff;
-      text-align: center;
-      text-transform: uppercase;
-      text-decoration: none;
-      }
-  
-    .cart-button:hover {
+    .features-list .cart-button {
       background-color: #323232;
+      width: 164px;
+      background-position: 10% 50%, 80% 50%;
     }
 
-    .cart-button::before {
-      display: inline-block;
-      content: '';
-      width: 28px;
-      height: 27px;
-      background-image: url('../img/cart.png');
-      background-size: contain;
-      background-position: center;
-      vertical-align: middle;
-      margin-right: 10px;
+    .cart-button {
+      background-image: url('../img/cart.png'), url('../img/add_to_cart.png');
+      background-repeat: no-repeat;
     }
-    
+  
+    .cart-button:hover {
+      background-color: #1abc9c;
+    }
 
   .features-list li:nth-child(4n){
     margin-right: 0;
@@ -408,60 +386,7 @@ margin-top: 32px;
   .features-list li:hover .features-list-price{
     background-color: #7fd9c7;
   }
-  
-  .features-list-item{
-    cursor:pointer;
-  }
-  
-
-  /*news section*/
-
-  .latest-news {
-    margin: 0;
-    padding: 0;
-    margin-top: 90px;
-  }
-
-  .latest-news-item {
-    float: left;
-    margin-right: 30px;
-    width: 350px;
-    list-style: none;
-    position: relative;/*1. указываем, элемент, от которого будет вестись отсчет положения абсолютно позиционированных элементов*/
-    
-  }
-  
-  .latest-news li:nth-child(3n){
-    margin-right: 0;
-  }
-
-  .latest-news-heder {
-    color: #555252;
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
-    font-weight: 600;
-    line-height: 26px;/* Приближение из-за подстановки шрифтов */
-    text-align: left;
-    margin: 0;
-    margin-top: 15px;
-  }
-
-  .latest-news-heder::after {
-    display: block;
-    content: '';
-    background-color: #4ec6ab;
-    width: 136px;
-    height: 3px;
-    margin-top: 15px;
-    }
-
-   .latest-news-announcement {
-       width: 335px;
-       text-align: left;
-       margin: 0;
-       margin-top: 30px;
-    }
-
-  
+ 
 footer {
   background-color: #323232;
   height: 88px;
@@ -479,9 +404,11 @@ footer {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  margin-top: -4px;
+  margin-top: 4px;
 }
 
-.footer-colored-text {
+.footer-colored-link {
   color: #7fd9c7;
+  text-decoration: none;
+
 }

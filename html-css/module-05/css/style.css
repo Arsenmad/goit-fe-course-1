@@ -128,36 +128,21 @@ img {
 
 .slider-ctrl-prev{
   left: 0;
-}
-
-.slider-ctrl-prev::before {
   display: inline-block;
-  content: '';
-  width: 22px;
-  height: 38px;
   background-image: url('../img/icon_prew.png');
-  background-size: contain;
   background-position: center;
-  vertical-align: middle;
+  background-repeat: no-repeat;
 }
-
 .slider-ctrl:hover {
   background-color: rgba(78, 198, 171, 0.65);
 }
 
 .slider-ctrl-next{
   right: 0;
-}
-
-.slider-ctrl-next::before {
   display: inline-block;
-  content: '';
-  width: 22px;
-  height: 38px;
   background-image: url('../img/icon_next.png');
-  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  vertical-align: middle;
 }
 
 .slides-list{
@@ -291,21 +276,26 @@ margin-top: 32px;
   }
 
    .social-icons a {
-      display: inline-block;
+      display: block;
       border: 1px solid white;
-      position: relative;
       height: 50px;
       width: 50px;
     }
-    
+
+      .visually-hidden {
+      position: absolute;
+      /*width: 1px;
+      height: 1px;
+      margin: -1px;*/
+    }
+
     .social-icons-item-1:hover, .social-icons-item-2:hover, .social-icons-item-3:hover {
       background-color: #1abc9c;
     } 
 
     .social-icons-item-1, .social-icons-item-2, .social-icons-item-3 {
       height: 50px;
-      width: 50px;
-      position: absolute;       
+      width: 50px;     
       top: 50%;
       background-repeat: no-repeat;
       background-position: center;

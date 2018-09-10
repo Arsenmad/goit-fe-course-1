@@ -22,6 +22,7 @@ body {
   width: 1140px;
   margin: 0 auto;
   padding-top: 38px;
+  /*padding-bottom: 38px;*/
 }
 
 img {
@@ -229,7 +230,6 @@ margin-top: 32px;
   .features-list-item{
     float: left;
     margin-right: 30px;
-    margin-bottom: 30px;
     width: 255px;
     height: 322px;
     position: relative;/*1. указываем, элемент, от которого будет вестись отсчет положения абсолютно позиционированных элементов*/
@@ -379,8 +379,8 @@ margin-top: 32px;
  
 footer {
   background-color: #323232;
-  height: 88px;
   position: relative;
+  padding-bottom: 38px;
 }
 
 .footer-text {
@@ -389,12 +389,7 @@ footer {
   font-size: 16px;/* Приближение из-за подстановки шрифтов */
   font-weight: 400;
   line-height: 28px;/* Приближение из-за подстановки шрифтов */
-  position: relative;              
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin-top: 4px;
+  margin: 0;
 }
 
 .footer-colored-link {

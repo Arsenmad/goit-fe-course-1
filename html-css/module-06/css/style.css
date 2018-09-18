@@ -12,13 +12,13 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+  margin: 0 auto;
 }
 
 img {
   display: block;
   max-width: 100%;
-  /*height: auto;*/
+  height: auto;
 }
 
 .container {
@@ -31,15 +31,12 @@ img {
  * MASTHEAD
  * ========================================
  */
- .masthead {
-  padding: 0;
-  margin-top: 30px;
-}
 
 .mastnav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  /*margin-top: 30px;*/
+  min-height: 60px;
 }
 
 /*
@@ -47,14 +44,13 @@ img {
  * LOGO
  * ========================================
  */
- .logo {
+ .mast-logo {
   display: inline-block;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   color: #95e1d3;
   font-size: 30px;/* Приближение из-за подстановки шрифтов */
   font-weight: 700;
-  text-align: left;
 }
 
 /*
@@ -64,22 +60,29 @@ img {
  */
  .site-nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 490px;
   margin: 0;
-  margin-left: auto;
   padding: 0;
+  font-size: 13px;
   list-style: none;
 }
 
 .site-nav a {
   display: block;
   padding: 0px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   color: #95e1d3;
   font-size: 14px;/* Приближение из-за подстановки шрифтов */
   font-weight: 400;
-  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.site-nav a:hover {
+  color: #f38181;
 }
 
 .site-nav a::after {
@@ -90,10 +93,6 @@ img {
   height: 3px;
   background-color: #f38181;
   transition: width 200ms linear;
-}
-
-.site-nav a:hover {
-  color: #f38181;
 }
 
 .site-nav a:hover::after {
@@ -116,11 +115,10 @@ img {
  */
 
 .section {
-  margin-top: 90px;
+  padding-top: 90px;
 }
 
 .header {
-  width: 80%;
   margin: auto;
   text-align: center;
   margin-bottom: 65px;
@@ -163,8 +161,6 @@ margin-bottom: 0px;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-right: 30px;
-  margin-left: 30px;
   list-style: none;
 }
 
@@ -199,7 +195,7 @@ margin-bottom: 0px;
   }
 
 .article {
-  position: relateve;
+  position: relative;
   padding-left: 62px;
   }
     
@@ -276,7 +272,6 @@ flex-grow: 0;
 }
 
 .team-list-item{
-  float: left;
   margin-right: 30px;
   width: 380px;
   height: 470px;
@@ -291,17 +286,17 @@ display: flex;
 align-items: center;
 justify-content: center;
 opacity: 0;
-transform: translate(-10px, -10px);
-transition: opacity 200ms linear;
+transition: opacity 300ms linear;
 background-image: linear-gradient(
   to top,
   rgba(252, 227, 138, 0.81) 0%,
   rgba(243, 129, 129, 0.81) 100%);
-  box-shadow: 10px 10px 0px 0px #95e1d3;
  }
   
   .team-list-item:hover .overlay {
     opacity: 1;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px 0px #95e1d3;
 }
   
  .social-icons {
@@ -320,20 +315,21 @@ background-image: linear-gradient(
 
  .social-icons a {
     display: block;
-    border: 1px solid #f38181;
     background-color: #fce38a;
+    border-right: 1px solid #f38181;
     height: 56px;
     width: 56px;
     z-index: 1;
+    transition: background-color 300ms linear;
   }
+
+  /*.social-icons a :not(:last-child) {
+    border-right: none;
+  }*/
 
     .visually-hidden {
     position: absolute;
   }
-
-  .social-icons-item-1:hover, .social-icons-item-2:hover, .social-icons-item-3:hover, .social-icons-item-4:hover {
-    background-color: #95e1d3;
-  } 
 
   .social-icons-item-1, .social-icons-item-2, .social-icons-item-3, .social-icons-item-4 {
     height: 56px;
@@ -342,6 +338,10 @@ background-image: linear-gradient(
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .social-icons-item-1:hover, .social-icons-item-2:hover, .social-icons-item-3:hover, .social-icons-item-4:hover {
+    background-color: #95e1d3;
+  } 
 
   .social-icons-item-1 {
   background-image: url('../img/png/facebook.png');
@@ -366,6 +366,7 @@ margin-bottom: 0px;
 
 .team-member{
   position: relative;
+  margin-top: 30px;
 }
 
 .team-member-name, .team-member-position {
@@ -375,7 +376,7 @@ margin-bottom: 0px;
 
 .team-member-name {
 font-family: 'Montserrat', sans-serif;
-margin: 30px 0 14px 0;
+margin: 0;
 color: #333333;
 font-size: 14px;
 font-weight: 400;
@@ -389,6 +390,11 @@ font-weight: 300;
 font-style: italic;
 line-height: 24px;
 margin: 0;
+padding-top: 14px;
+}
+
+.team {
+  padding-bottom: 90px;
 }
   
 /*
@@ -399,7 +405,6 @@ margin: 0;
 
 footer {
   position: relative;
-  padding-top: 80px;
 }
 
 .footer {

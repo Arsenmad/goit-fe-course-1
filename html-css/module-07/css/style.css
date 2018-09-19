@@ -42,9 +42,11 @@ img {
 .logo {
   display: inline-block;
   color: #fed136;
-  font-family: 'Italianno', cursive;
-  font-size: 26px;
+  font-family: 'Italianno';
+  font-size: 46px;
   line-height: 41px;
+  font-style: italic;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -118,7 +120,7 @@ input[type='radio'].visually-hidden {
 
 .services-header-text {
   color: #777777;
-  font-family: 'DroidSerif', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-style: italic;
   font-size: 16px;
   font-weight: 400;
@@ -180,7 +182,8 @@ input[type='radio'].visually-hidden {
 }
 
 .services-card-text {
-  font-family: 'RobotoSlab', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
   color: #777777;
   font-size: 14px;
   line-height: 1.5;
@@ -220,14 +223,18 @@ input[type='radio'].visually-hidden {
 
 .contact-header-text {
   color: #777777;
-  font-family: 'DroidSerif', cursive;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: italic;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  font-style: italic;
 }
 
-/*FORM*/
+/*
+ * ========================================
+ * FORM
+ * ========================================
+ */
 
 .contact-form-imput {
   display: flex;
@@ -260,9 +267,10 @@ input {
   background-color: #fcfafa;
   padding: 15px 20px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 400;
 }
 
-.input-last-child {
+.input-subject {
   margin-bottom: 0px;
 }
 
@@ -278,6 +286,7 @@ textarea {
   background-color: #fcfafa;
   padding: 15px 20px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 400;
 }
 
 .contact-form-btn {
@@ -296,4 +305,20 @@ textarea {
   text-decoration: none;
   background-color: #fed136;
   border: 0;
+}
+
+.contact-form input:focus {
+  outline: 0;
+}
+
+.contact-form input[type='email']:valid,
+.contact-form input[type='text']:valid,
+.contact-form textarea[type='text']:valid {
+  border: 2px solid green;
+}
+
+.contact-form input[type='email']:invalid,
+.contact-form input[type='text']:invalid,
+.contact-form textarea[type='text']:invalid {
+  border: 2px solid red;
 }

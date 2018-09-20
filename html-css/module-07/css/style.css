@@ -96,13 +96,18 @@ input[type='radio'].visually-hidden {
  * ========================================
  */
 
-.services {
+.section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+/*.services, .contact {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}*/
+
 .services-header {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 75px;
 }
@@ -114,8 +119,8 @@ input[type='radio'].visually-hidden {
   line-height: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;  
 }
 
 .services-header-text {
@@ -125,6 +130,7 @@ input[type='radio'].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+  padding: 0;
 }
 
 /*
@@ -178,7 +184,9 @@ input[type='radio'].visually-hidden {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0;
 }
 
 .services-card-text {
@@ -188,6 +196,7 @@ input[type='radio'].visually-hidden {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
+  margin: 0;
 }
 
 /*
@@ -201,7 +210,7 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-bottom: 115px;
+  /*padding-bottom: 115px;*/
 }
 
 .contact-header {
@@ -212,7 +221,6 @@ input[type='radio'].visually-hidden {
 
 .contact-header-title {
   margin: 0;
-  padding-top: 90px;
   padding-bottom: 20px;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -249,25 +257,19 @@ input[type='radio'].visually-hidden {
   margin-right: 30px;
 }
 
-.contact-form-imput-2 {
-  width: 455px;
-  margin-right: 0;
-}
-
 input {
   border: 0;
   outline: 0;
   width: 455px;
-  height: 50px;
+  /*height: 50px;*/
   margin-bottom: 30px;
   color: #bbbbbb;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 3px;
   background-color: #fcfafa;
-  padding: 15px 20px;
+  padding: 18px 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 400;
 }
 
 .input-subject {
@@ -286,7 +288,7 @@ textarea {
   background-color: #fcfafa;
   padding: 15px 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 400;
+  min-height: 227px;
 }
 
 .contact-form-btn {
@@ -307,18 +309,24 @@ textarea {
   border: 0;
 }
 
+.contact-form-btn:hover {
+  border: 2px solid #fed136;
+  background-color: #ffffff;
+  color: #fed136;
+}
+
 .contact-form input:focus {
   outline: 0;
 }
 
 .contact-form input[type='email']:valid,
 .contact-form input[type='text']:valid,
-.contact-form textarea[type='text']:valid {
+.contact-form textarea:valid {
   border: 2px solid green;
 }
 
 .contact-form input[type='email']:invalid,
 .contact-form input[type='text']:invalid,
-.contact-form textarea[type='text']:invalid {
+.contact-form textarea:invalid {
   border: 2px solid red;
 }

@@ -101,11 +101,6 @@ input[type='radio'].visually-hidden {
   padding-bottom: 120px;
 }
 
-/*.services, .contact {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}*/
-
 .services-header {
   margin: 0 auto;
   text-align: center;
@@ -164,6 +159,7 @@ input[type='radio'].visually-hidden {
   height: 73px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 16px;
 }
 
 .icon-ecommerce::before {
@@ -184,9 +180,8 @@ input[type='radio'].visually-hidden {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin: 0;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .services-card-text {

@@ -3,22 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Домашнее задание - модуль 08</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
   <!-- MASTHEAD -->
-  <header class="header">
-    <div class="container banner">
-      <div class="masthead">
-        <a href="#" class="logo">urlaubsglück</a>
-        <nav>
-        <ul class="nav">
+  <header class="page-header container">
+    <nav class="page-nav">
+        <ul class="site-nav">
           <li class="nav-item">
             <a href="#" class="nav-link">Log in</a>
           </li>
@@ -26,26 +24,24 @@
             <a href="#" class="nav-link">Sign up</a>
           </li>
         </ul>
-      </nav>
-     </div>
-      <section class="home">
+        <a href="#" class="logo">urlaubsglück</a>
+    </nav>
+	<section class="home">
         <h2 class="home-title">Share your holiday dreams</h2>
         <p class="home-slogan">And find the perfect partner to fullfill it</p>
         <a href="#" class="home-btn">Find your holiday partner</a>
       </section>
-    </div>
   </header>
 
-  <main>
+  <main class="container">
   <!-- PARTNERS SECTION -->
-  <div class="partners-wrapper">
-    <section class="container partners">
+    <section class="partners">
       <header class="partners-header">
         <h3 class="partners-header-title">Meet a partner for your best holiday</h3>
       </header>
 
+  <!-- PARTNERS LIST -->
       <ul class="partners-list">
-        <!-- PARTNERS LIST -->
         <li class="partners-list-item">
             <div class="partners-card-photo icon-1">
             <img class="partners-card-img" alt="Bradley Hunter" src="img/Layer_6.jpg" width="120" height="120">
@@ -75,10 +71,8 @@
               <p class="partners-card-text">Based in Chicago. I love playing tennis and loud music.</p>
         </li>
       </ul>
-      <!--<a href="#" class="partners-btn">See other partners</a>-->
       <button class="partners-btn">See other partners</button>
     </section>
-  </div>
 </main>
 
 </body>

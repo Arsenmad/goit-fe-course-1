@@ -50,17 +50,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     padding-top: 45px;
+    margin-bottom: 150px;
   }
 
   .site-nav {
     margin: 0;
-  }
-
-  .home {
-    margin-top: 150px;
   }
 
   .home-title {

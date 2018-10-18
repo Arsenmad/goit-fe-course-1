@@ -65,7 +65,6 @@ img {
 .home {
   text-align: center;
   margin: auto;
-  margin-top: 35px;
   padding-bottom: 140px;
 }
 
@@ -121,6 +120,7 @@ img {
 .partners-header {
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .partners-header-title {
@@ -128,7 +128,6 @@ img {
   color: #333333;
   font-size: 22px;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 /* PARTNERS LIST */
